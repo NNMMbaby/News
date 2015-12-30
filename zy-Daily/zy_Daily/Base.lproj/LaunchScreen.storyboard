@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="星空2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="zjr-VO-FqD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每天推荐新鲜文章，开拓新视野" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFk-oC-eeM">
+                                <rect key="frame" x="19" y="200" width="337" height="133"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="—爱你的推荐人" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtT-Mv-k48">
+                                <rect key="frame" x="276" y="341" width="84" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sFk-oC-eeM" firstAttribute="width" secondItem="zjr-VO-FqD" secondAttribute="width" multiplier="0.9" id="5KW-77-ccL"/>
+                            <constraint firstAttribute="trailing" secondItem="zjr-VO-FqD" secondAttribute="trailing" id="7oX-3v-WWS"/>
+                            <constraint firstItem="gtT-Mv-k48" firstAttribute="leading" secondItem="sFk-oC-eeM" secondAttribute="trailing" constant="-80" id="HPT-at-cF0"/>
+                            <constraint firstItem="zjr-VO-FqD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Hxy-rw-6Ff"/>
+                            <constraint firstItem="sFk-oC-eeM" firstAttribute="height" secondItem="zjr-VO-FqD" secondAttribute="height" multiplier="0.2" id="S4j-uY-wNy"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="zjr-VO-FqD" secondAttribute="bottom" id="Slj-Hh-upu"/>
+                            <constraint firstItem="gtT-Mv-k48" firstAttribute="top" secondItem="sFk-oC-eeM" secondAttribute="bottom" constant="8" id="YR6-Cc-dxT"/>
+                            <constraint firstItem="sFk-oC-eeM" firstAttribute="centerX" secondItem="zjr-VO-FqD" secondAttribute="centerX" id="c1o-GF-x7b"/>
+                            <constraint firstItem="sFk-oC-eeM" firstAttribute="centerY" secondItem="zjr-VO-FqD" secondAttribute="centerY" multiplier="0.8" id="ocK-Kt-b3s"/>
+                            <constraint firstItem="zjr-VO-FqD" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="y0Q-8m-utc"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.5" y="377.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="星空2.jpeg" width="700" height="1103"/>
+    </resources>
+</document>

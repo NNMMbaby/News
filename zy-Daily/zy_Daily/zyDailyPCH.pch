@@ -1,0 +1,25 @@
+//
+//  zyDailyPCH.pch
+//  zy_Daily
+//
+//  Created by 李艳楠 on 15/11/17.
+//  Copyright © 2015年 南南南. All rights reserved.
+//
+
+#ifndef zyDailyPCH_pch
+#define zyDailyPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "zy_daily_header.h"
+#import "UINavigationBar+Awesome.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+
+#ifdef __OPTIMIZE__
+# define NSLog(...) {}
+#else
+# define NSLog(...) NSLog(__VA_ARGS__)
+#endif
+
+#endif /* zyDailyPCH_pch */
